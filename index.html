@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Komida Gostosa - Brazilian Food Delivery </title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/reset.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+  </head>
+
+<body class="bg-light">
+    
+<!-- Navbar  -->
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid position-relative">
+        <!-- Logo -->
+            <a class="navbar-brand d-flex flex-row align-items-center" href="#">
+                <img src="assets/logo/logo.png" alt="" class="rounded-4 p-2" height="50"> 
+                <span class="text-secondary">KG</span>
+            </a>
+        <!-- end of logo -->
+        <!-- mobile toggle bar -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-controls="navbarSupportedContent searchBox" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--  -->
+        <div class="nav-item me-4 tools">
+            <a href="" class="nav-link text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>
+            </a>
+        </div>
+        <!-- Collapsed menu -->
+        <div class="multi-collapse collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Location menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle border border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                      São Paulo
+                    </a>
+                    <ul class="dropdown-menu border border-0">
+                    <li><a class="dropdown-item" href="#"> Rio de Janeiro </a></li>
+                    <li><a class="dropdown-item" href="#"> Curitiba </a></li>
+                    <li><a class="dropdown-item" href="#"> Salvador </a></li>
+                    <li><a class="dropdown-item" href="#"> Belo Horizonte </a></li>
+                    </ul>
+                </li>
+                 <!-- end of location menu -->
+                <!-- Food menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cuisine
+                    </a>
+                    <ul class="dropdown-menu border border-0">
+                      <div class="d-flex flex-row row row-cols-2 cuisine-options">
+                        <li>
+                          <a class="dropdown-item col cuisine-item text-center" href="#"> Churrasco </a>
+                        </li>
+                        <li><a class="dropdown-item col cuisine-item text-center" href="#"> Culinária baiana </a></li>
+                        <li><a class="dropdown-item col cuisine-item text-center" href="#"> Culinária mineira </a></li>
+                        <li><a class="dropdown-item col cuisine-item text-center" href="#"> Pizzas  </a></li>
+                        <li><a class="dropdown-item col cuisine-item text-center" href="#"> Bares & Cafés </a></li>
+                        <li><a class="dropdown-item col cuisine-item text-center" href="#"> Comida de boteco </a></li>
+                      </div>
+                    </ul>
+                </li>
+                <!-- end of food menu -->
+                <li class="nav-item">
+                    <a href="" class="nav-link text-secondary">
+                    About Us
+                    </a>
+                </li>
+            <!-- Search bar -->
+                <li class="nav-item me-5 px-4 collapse navbar-collapse tools">
+                    <a class="nav-link text-secondary" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#searchBox" aria-expanded="false"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end of collapsed menu -->
+        </div>
+    </nav>
+
+    <div class="search-box multi-collapse collapse" id="searchBox">
+    <div class="container py-3">
+      <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+        <input class="form-control rounded-start" type="text" placeholder="What do you need?">
+      </div>
+    </div>
+    </div>
+    
+    <!-- Hero -->
+     <section id="hero" class="text-light d-flex align-items-center text-center mb-4">
+        <div class="mx-auto" style="width: 90vw">
+          <h3 class="fs-4 pb-2"> #1 Homemade food delivery service </h3>
+          <div class="h1 text-light">
+            Eat like you're at home in
+            <div class="dropdown d-inline-block mb-5">
+              <a class="fs-1 p-3 text-warning dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;"> São Paulo </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Rio de Janeiro </a></li>
+                <li><a class="dropdown-item" href="#"> Curitiba </a></li>
+                <li><a class="dropdown-item" href="#"> Salvador </a></li>
+                <li><a class="dropdown-item" href="#"> Belo Horizonte </a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn px-md-5 py-md-2 border border-success-subtle rounded-3 text-light fs-4" id="heroButton"> What do you want to eat? </button>
+        </div>
+    </section>
+
+    <!-- Trending -->
+    <section class="bg-light" id="trending">
+
+      <div class="trending-header p-5 mx-auto align-items-center text-center">
+        <h2> Trending food in your city </h2>
+            <h6> Discover the options and choose what's best for you </h6>
+      </div>
+
+      <div class="container px-1 pb-5">
+
+        <!-- First row -->
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
+          <!-- First card -->
+          <div class="col h-100">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/564x/d4/0a/dc/d40adcd61d92a5cb6d135e77833efd61.jpg" class="card-img-top" style="height:18rem"">
+              <div class="card-body mx-auto">
+                <h3 class="fs-4 fw-semibold"> Churrasco </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="col h-100">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/564x/c0/4b/ea/c04bea12dc5d1c5ababfa495bf35d6f0.jpg" class="card-img-top" style="height:18rem"">
+                <div class="card-body mx-auto">
+                  <h3 class="fs-4 fw-semibold"> Culinária baiana </h3>
+                </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col h-100">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/736x/8f/24/e9/8f24e967d86d1155b939bd33c3e9660b.jpg" class="card-img-top" style="height:18rem"">
+              <div class="card-body mx-auto">
+                <h3 class="fs-4 fw-semibold"> Culinária mineira </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth card -->
+          <div class="col h-100">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/564x/88/08/09/8808092500d211ca9715f1c85ee193a3.jpg" class="card-img-top" style="height:18rem"">
+                <div class="card-body mx-auto">
+                  <h3 class="fs-4 fw-semibold"> Pizzas </h3>
+                </div>
+            </div>
+          </div>
+
+          <!-- Fifth card -->
+          <div class="col h-100">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/564x/42/01/81/4201819695ad676025374974f64e92a2.jpg" class="card-img-top" style="height:18rem"">
+                <div class="card-body mx-auto">
+                  <h3 class="fs-4 fw-semibold"> Bares & Cafés </h3>
+                </div>
+            </div>
+          </div>
+
+          <!-- Sixth card  -->
+          <div class="col h-100">
+            <div class="card shadow-sm">
+              <img src="https://i.pinimg.com/564x/f3/b0/5c/f3b05c0cecf87ee807487005c23dfde5.jpg" class="card-img-top" style="height:18rem"">
+                <div class="card-body mx-auto">
+                  <h3 class="fs-4 fw-semibold"> Comida de boteco  </h3>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>  
+    
+    <!-- App -->
+    <section id="app" class="text-light d-flex text-center text-md-start flex-row">
+      <div class="container py-5 mb-5 px-auto">
+        <div class="row">
+          
+          <div class="col-md-8">
+            <h2 class="fw-bolder fs-2 mb-4"> Order food to go with the Komida Gostosa app </h2>
+            <h6> Secure pay, collect loyalty points, track your order in real life, 24/7 customer service</h6>
+          </div>
+
+          <div class="col-md-4 justify-content-end">
+            <img src="./assets/images/phone.png" style="height: 200px;">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Join us -->
+    <section class="bg-light" id="join">
+
+      <!-- <div class="row row-cols-1 row-cols-md-2 my-5 mx-md-auto gy-3"> -->
+        <div class="py-5">
+
+          <div class="row gy-4 mx-auto">
+            
+            <div class="col-lg-6">
+              <div class="rounded-4 mx-1 text-center text-md-start position-relative" id="courier-card" style="height: 400px;">
+                <h5 class="fw-bold fs-2 pt-5 mx-md-5" id="join-title"> Become a Courier </h5>
+                <p class="mx-md-5 mx-2">Earn competitive salary as delivery courier working flexible schedule.</p>
+                <button class="btn mx-5 bg-success border rounded-3 text-light fs-6" id="heroButton"> Start earning </button>
+                <img class="rounded-4 join-illustration" src="assets/images/delivery.png" style="height: 200px;"> 
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="rounded-4 mx-1 text-center text-md-start position-relative" id="restaurant-card" style="height: 400px;">
+                <h5 class="fw-bold fs-2 pt-5 mx-md-5" id="join-title"> Become a Courier </h5>
+                <p class="mx-md-5 mx-2"> Grow your business by reaching new customers </p>
+                <button class="btn mx-5 bg-primary border rounded-3 text-light fs-6"> Partner with us </button>
+                <img class="rounded-4 join-illustration" src="assets/images/restaurant.png" style="height: 200px;"> 
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </section>
+
+    <!-- Featured restaurants  -->
+    <section class="restaurants">
+      <div class="mx-auto my-5 text-center" style="width: 60vw">
+        <h1 class="fs-1 pb-2"> Popular restaurants in your city </h1>
+        <h3 class="fs-4 pb-3"> Check the best restaurants near you </h3>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-4 gy-5 mx-auto">
+        <!-- card 1 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://public.esperienza.com.br/west-plaza-Dskdafaie357dfs35Xbc3d5s39b15dXX3d2/loja/Divino-Fog%C3%A3o.jpg?v=20230510-1043" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://yungas.com.br/wp-content/uploads/2023/04/casa-pao-de-queijo_1600264717.jpg" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://gsobmidia.com.br/uploads/lojas/1438/spoleto_1610030226.jpg" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://seeklogo.com/images/H/habibs-nova-logo-C52F3622CA-seeklogo.com.png" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://cdn.shoppingbelavista.com.br/est/001/log/000078.webp" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://www.partagepocosdecaldas.com.br/wp-content/uploads/sites/12/2023/07/Design-sem-nome-9.png" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://souleblon.com.br/wp-content/uploads/2015/08/Bacio-di-Latte-leblon-logo.png" class="card-img-top">
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="col h-100">
+          <div class="card shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Coco_Bambu_Restaurante.png" class="card-img-top">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Customer reviews -->
+    <section id="review-section" class="my-5">
+      <div class="p-5 mx-auto mt-5 align-items-center text-center">
+        <h2> Customer reviews </h2>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-success" aria-label="Slide 2"></button>
+          
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Item -->
+          <div class="carousel-item active">
+            <!-- Row -->
+            <div class="reviews row row-cols-1 row-cols-md-3 gy-2 mx-auto">
+
+              <!-- First review -->
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <div class="card-body">
+                    <div class="star-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <p class="card-text">
+                      Fast and reliable! I always receive my meals hot and on time. Intuitive and easy-to-use app. Highly recommend for those seeking convenience
+                    </p>
+                  </div>
+                  <div class="card-footer reviewer-profile">
+                    <div class="d-flex flex-row">
+                      <img class="rounded-circle" src="https://roraimaemfoco.com/wp-content/uploads/2022/07/supla1.jpeg" style="height: 50px; width: 50px;">
+                      <div class="d-flex flex-column ps-3">
+                        <p class="m-0 fw-semibold reviwer-name"> José da Silva </p>
+                        <p class="fw-lighter review-date"> 07/07/2022 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second review -->
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <div class="card-body">
+                    <div class="star-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="card-text">
+                      Incredible variety of restaurants and options. Modern and efficient interface. Deliveries are always punctual. An app that simplifies my life!
+                    </p>
+                  </div>
+                  <div class="card-footer reviewer-profile">
+                    <div class="d-flex flex-row">
+                      <img class="rounded-circle" src="https://pbs.twimg.com/profile_images/1600864744138854402/wHNbxsJb_400x400.jpg" style="height: 50px; width: 50px;">
+                      <div class="d-flex flex-column ps-3">
+                        <p class="m-0 fw-semibold reviwer-name"> Cláudia Maria </p>
+                        <p class="fw-lighter review-date"> 13/10/2023 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+              <!-- Third review -->
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <div class="card-body">
+                    <div class="star-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="card-text">
+                      I've tried several delivery apps, and this one stands out for its simplicity and speed. Never had issues with orders. Great experience!
+                    </p>
+                  </div>
+                  <div class="card-footer reviewer-profile">
+                    <div class="d-flex flex-row">
+                      <img class="rounded-circle" src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/10/08/1000x1000/1_juliette-26605833.jpg?20221008111446?20221008111446" style="height: 50px; width: 50px;">
+                      <div class="d-flex flex-column ps-3">
+                        <p class="m-0 fw-semibold reviwer-name"> Sofia Matheus </p>
+                        <p class="fw-lighter review-date"> 09/04/2022 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <div class="reviews row row-cols-1 row-cols-md-3 gy-2 mx-auto">
+
+              <!-- First review -->
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <div class="card-body">
+                    <div class="star-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <p class="card-text">
+                      Excellent app! Easy navigation, attractive promotions, and deliveries are on time. It never disappoints. Ideal for those seeking convenience.
+                    </p>
+                  </div>
+                  <div class="card-footer reviewer-profile">
+                    <div class="d-flex flex-row">
+                      <img class="rounded-circle" src="https://static.poder360.com.br/2021/05/Gil-do-vigor-bbb-7mai2021.png" style="height: 50px; width: 50px;">
+                      <div class="d-flex flex-column ps-3">
+                        <p class="m-0 fw-semibold reviwer-name"> Adalberto Souza </p>
+                        <p class="fw-lighter review-date"> 03/09/2023 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!-- Second review -->
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <div class="card-body">
+                    <div class="star-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <p class="card-text">
+                      Easy ordering, quick delivery. Real-time tracking is a game-changer. Always find my favorite foods. Highly recommend for convenience!
+                    </p>
+                  </div>
+                  <div class="card-footer reviewer-profile">
+                    <div class="d-flex flex-row">
+                      <img class="rounded-circle" src="https://www.opovo.com.br/_midias/jpg/2023/07/27/800x600/1_rodrigo_goes_viraliza_nas_redes_sociais-22781085.jpg" style="height: 50px; width: 50px;">
+                      <div class="d-flex flex-column ps-3">
+                        <p class="m-0 fw-semibold reviwer-name"> Roberto Natty </p>
+                        <p class="fw-lighter review-date"> 24/9/2023 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third review  -->
+              <div class="col">
+                <div class="card h-100 shadow">
+                  <div class="card-body">
+                    <div class="star-rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <p class="card-text">
+                      Great variety of restaurants and dishes. The rating system helps with choices. Deliveries are always accurate. My favorite delivery app!
+                    </p>
+                  </div>
+                  <div class="card-footer reviewer-profile">
+                    <div class="d-flex flex-row">
+                      <img class="rounded-circle" src="https://observatoriodosfamosos.uol.com.br/portal/wp-content/uploads/2024/01/IVT-2-1-e1706566361726.jpg" style="height: 50px; width: 50px;">
+                      <div class="d-flex flex-column ps-3">
+                        <p class="m-0 fw-semibold reviwer-name"> Marta Silva </p>
+                        <p class="fw-lighter review-date"> 10/01/2024 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>      
+    </section>
+    
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+      <div class="row row-cols-md-4 row-cols-1 text-light mx-auto">
+
+        <div class="col">
+          <ul>
+            <li>
+              <h3 class="fs-3 fw-bold"> Komida Gostosa <sup>TM</sup></h3>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+            <h4 class="fs-5 fw-semibold"> Join us </h4>
+            <li> Careers </li>
+            <li> Restaurants </li>
+            <li> Become a courier </li>
+            <li> About </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+            <h4 class="fs-5 fw-semibold"> Let us help you </h4>
+            <li> Help Center </li>
+            <li> Support </li>
+            <li> Contacts </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+            <h4 class="fs-5 fw-semibold"> Follow us </h4>
+            <li> Instagram </li>
+            <li> Tik Tok </li>
+            <li> Facebook </li>
+            <li> Twitter </li>
+            <li> LinkedIn </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="mx-auto">
+
+      <div class="row row-cols-md-2 row-cols-1 text-light mx-md-auto bottom mt-5">
+        <div class="col-md-7 text-center text-md-start">
+          <p class="fw-lighter"> All rights reserved. Made by Eduarda Pimentel </p>
+        </div>
+        <div class="col-md-5 d-flex flex-row justify-content-end">
+          <p class="fw-lighter pe-2"> Privacy policy </p>
+          <p class="fw-lighter pe-2"> Terms & Conditions </p>
+          <p class="fw-lighter pe-2"> Cookies policy </p>
+        </div>
+      </div>
+    </footer>
+   
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>

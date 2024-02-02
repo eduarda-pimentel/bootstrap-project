@@ -1,0 +1,130 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* nav{
+    width: 100%;
+    height: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+
+.cuisine-options{
+    width: 400px;
+    height: 400px;
+}
+
+.cuisine-item{
+    height: 100%;
+    width: 100%;
+}
+
+#hero{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://img.freepik.com/fotos-premium/feijoada-comida-tipica-e-tradicional-da-culinaria-brasileira-servida-com-arroz-farofa-laranja-pimenta-e-repolho_317111-1427.jpg?w=826);
+    height: 600px;
+    background-size: cover;
+
+}
+
+#heroButton{
+    background-color: #53ab4b;
+    font-size: 0.8rem;
+}
+
+#app{
+    height: 400px;
+    background-color: #7ED957;
+}
+
+#courier-card{
+    background-color:  #D6EDBA;
+}
+
+#restaurant-card{
+    background-color: #CAF4F6;
+}
+
+.card-img-top {
+    height: 10rem;
+}
+
+.carousel-inner{
+    width: 100%;
+}
+
+.reviewer-profile{
+    background: none;
+}
+
+.reviwer-name{
+    font-size: .8rem;
+}
+
+.review-date{
+    font-size: .75rem;
+}
+
+.checked{
+    color: rgb(219, 183, 64);
+}
+
+.debug {
+    border: 4px solid red;
+}
+
+footer{
+    background-color: #7ED957;
+}
+
+footer div{
+    width: 100%;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer hr{
+    color: white;
+    width: 95vw;
+}
+
+.bottom p{
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px){
+
+    .tools {
+      position: absolute;
+      right: 0;
+    }
+    #app{
+        height: 300px;
+    }
+
+    .trending-header{
+        width: 60vw;
+    }
+
+    .join-illustration{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    #join-title{
+        width: 40%;
+    }
+    
+    #courier-card p{
+        width: 60%;
+    }
+} 
+
+@media (min-width: 992px){
+    .card-img-top {
+        height: 15rem;
+    }
+}
